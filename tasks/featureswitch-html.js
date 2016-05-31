@@ -10,8 +10,7 @@
 
 module.exports = function(grunt) {
 
-  // Please see the Grunt documentation for more information regarding task
-  // creation: http://gruntjs.com/creating-tasks
+  // TODO: Add option to silence the feature switch summary
 
   grunt.registerMultiTask('featureswitch-html', 'Removes disabled features from HTML', function() {
     var options = this.options({
@@ -20,6 +19,11 @@ module.exports = function(grunt) {
     }),
         featuresDisabled = [],
         features = this.data.features;
+
+
+    // TODO: Table?
+    grunt.verbose.ok('features', features);
+
 
     // Log the features
     (function() {
@@ -66,6 +70,7 @@ module.exports = function(grunt) {
         }
       })
       .map(function(filePath) {
+        grunt.verbose.ok('file', filePath);
         // Read file source.
         var content = grunt.file.read(filePath);
 
