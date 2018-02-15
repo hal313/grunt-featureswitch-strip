@@ -23,15 +23,13 @@
    test.ifError(value)
    */
 
-  exports['featureswitch-html'] = {
+  exports['featureswitch-strip'] = {
     setUp: function(done) {
       // Setup here if necessary
       done();
     },
 
     'simple-html-only-disabled': function(test) {
-      test.expect(1);
-
       var actual = grunt.file.read('test/actual/simple-html-only-disabled.html');
       var expected = grunt.file.read('test/expected/simple-html-only-disabled.html');
 
@@ -40,8 +38,6 @@
       test.done();
     },
     'simple-html-only-enabled': function(test) {
-      test.expect(1);
-
       var actual = grunt.file.read('test/actual/simple-html-only-enabled.html');
       var expected = grunt.file.read('test/expected/simple-html-only-enabled.html');
 
@@ -60,8 +56,6 @@
       test.done();
     },
     'simple-js-only-enabled': function(test) {
-      test.expect(1);
-
       var actual = grunt.file.read('test/actual/simple-js-only-enabled.js');
       var expected = grunt.file.read('test/expected/simple-js-only-enabled.js');
 

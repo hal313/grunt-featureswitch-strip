@@ -1,6 +1,6 @@
 /*
- * grunt-featureswitch-html
- * https://github.com/hal313/grunt-featureswitch-html
+ * grunt-featureswitch-strip
+ * https://github.com/hal313/grunt-featureswitch-strip
  *
  * Copyright (c) 2016 John Ghidiu
  * Licensed under the MIT license.
@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
   // TODO: Add option to silence the feature switch summary
 
-  grunt.registerMultiTask('featureswitch-html', 'Removes disabled features from HTML', function() {
+  grunt.registerMultiTask('featureswitch-strip', 'Removes disabled features from HTML', function() {
     var options = this.options({
       includeHTML: true,
       includeJS: false

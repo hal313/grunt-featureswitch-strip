@@ -1,23 +1,23 @@
 {
-  "name": "grunt-featureswitch-html",
-  "description": "Removes disabled features from HTML",
-  "version": "0.1.0",
-  "homepage": "https://github.com/hal313/grunt-featureswitch-html",
+  "name": "grunt-featureswitch-strip",
+  "description": "Removes disabled features from HTML files",
+  "version": "1.0.0",
+  "homepage": "https://github.com/hal313/grunt-featureswitch-strip",
   "author": {
     "name": "John Ghidiu",
     "email": "john-github@rmdashrf.org"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/hal313/grunt-featureswitch-html.git"
+    "url": "git://github.com/hal313/grunt-featureswitch-strip.git"
   },
   "bugs": {
-    "url": "https://github.com/hal313/grunt-featureswitch-html/issues"
+    "url": "https://github.com/hal313/grunt-featureswitch-strip/issues"
   },
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://github.com/hal313/grunt-featureswitch-html/blob/master/LICENSE-MIT"
+      "url": "https://github.com/hal313/grunt-featureswitch-strip/blob/master/LICENSE-MIT"
     }
   ],
   "engines": {
