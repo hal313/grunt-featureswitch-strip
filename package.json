@@ -1,7 +1,7 @@
 {
   "name": "grunt-featureswitch-strip",
   "description": "Removes disabled features from HTML files",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "homepage": "https://github.com/hal313/grunt-featureswitch-strip",
   "author": {
     "name": "John Ghidiu",
