@@ -10,8 +10,6 @@
 
 module.exports = function(grunt) {
 
-  // TODO: Add option to silence the feature switch summary
-
   grunt.registerMultiTask('featureswitch-strip', 'Removes disabled features from HTML', function() {
     var options = this.options({
       includeHTML: true,
@@ -20,10 +18,8 @@ module.exports = function(grunt) {
         featuresDisabled = [],
         features = this.data.features;
 
-
-    // TODO: Table?
+    // Output the features
     grunt.verbose.ok('features', features);
-
 
     // Log the features
     (function() {

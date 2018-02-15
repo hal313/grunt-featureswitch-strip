@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/hal313/grunt-featureswitch-strip.svg?branch=master)](https://travis-ci.org/hal313/grunt-featureswitch-strip)
+[![npm version](https://badge.fury.io/js/grunt-featureswitch-strip.svg)](https://badge.fury.io/js/grunt-featureswitch-strip)
+
 # grunt-featureswitch-strip
 
 >Strips disabled features from files as a grunt task. The features are described within specialized HTML or Javascript comments.
