@@ -18,6 +18,11 @@ module.exports = function(grunt) {
         featuresDisabled = [],
         features = this.data.features;
 
+    // If a filename was provided instead, read the features in (presumes JSON)
+    if ('string' === typeof features) {
+      features = grunt.file.readJSON(features);
+    }
+
     // Output the features
     grunt.verbose.ok('features', features);
 
