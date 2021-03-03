@@ -27,14 +27,18 @@ In your project's Gruntfile, add a section named `featureswitch-strip` to the da
 
 ```js
 grunt.initConfig({
-  featureswitch-strip: {
+  `featureswitch-strip`: {
     options: {
         includeHTML: true, // Remove features specified with HTML comments (default true)
         includeJS: false   // Remove features specified with Javascript comments (default false)
     },
-    your_target: {
-      // Target-specific file lists and/or options go here.
-    },
+    features: 'features,json',
+    files: [{
+      expand: true,
+      cwd: 'src',
+      src: ['*.html', 'js/*.js'],
+      dest: './tmp/'
+    }]
   },
 });
 ```
@@ -67,9 +71,19 @@ Remove features specified with HTML comments. HTML features are specified like:
 ```
 Note that the parser *requires* the trailing ```-->``` on the ```<!-- FEATURE.end(...) -->``` declaration; this ensures that the parser removes any trailing characters and does not leave unwanted characters in the output.
 
-### Usage Examples
+#### features
+Type: `Object` or `string`
+Default value: `{}`
 
-#### Default Options
+Defines the features to use. Either as an object with all `boolean` values or the path to a JSON file containing a similar object.
+
+#### files
+Type: `string[]`
+Default value: `[]`
+
+Standard `grunt` file declaration.
+
+### Usage Examples
 In this example, the file index.html is stripped of any feature switch comments, both HTML and Javascript.
 
 ```js
@@ -81,11 +95,13 @@ grunt.initConfig({
     features: {
       f1: false
     },
-    files: {
-      src: ['app/index.html'],
-      dest: 'dist.html'
-    },
-  },
+    files: [{
+      expand: true,
+      cwd: 'src',
+      src: ['*.html', 'js/*.js'],
+      dest: './tmp/'
+    }]
+  }
 });
 ```
 
