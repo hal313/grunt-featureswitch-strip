@@ -3,6 +3,8 @@
 
 # grunt-featureswitch-strip
 
+>This project has been deprecated. Please use [feature-switch-core](https://github.com/hal313/featureswitch-js-functional-example) moving forward.
+
 >Strips disabled features from files as a grunt task. The features are described within specialized HTML or Javascript comments.
 
 ## Getting Started
